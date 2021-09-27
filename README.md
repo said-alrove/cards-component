@@ -32,6 +32,13 @@ This is the seventh project from Juan Pablo's course of [CSS Grid and Flexbox](h
     - [postcss-nested-vars](https://www.npmjs.com/package/postcss-nested-vars) is meant to be a plugin that allows you to create **global and local scopes** for your variables such as in SASS.
     - [postcss-proportional-spacing](https://www.npmjs.com/package/postcss-proportional-spacing) is meant ot be a plugin that allows you to create vertical and horizontal proportional spacing using ratios.
 
+* Something important to mention is that for this mini-project I wanted to use PostCSS plugins only, to test which ones are worth it to use in future projects in combination with **SASS** to make a stronger kind of preprocessor.
+
+    - While compiling I figured out that there were some features that seem to don't be supported by PostCSS (or any of the plugins I used), being two of those the **::before** and **::after** pseudo-elements.
+    -Also, I had problems when trying to use the parent selector in my styles (it doesn't work as in SASS, is more complicated and less cool).
+    
+* To make things more interesting, I tried to use Javascript and JSON as I did in the [**freelancer-home**](https://github.com/said-alrove/freelancer-home) project to load data, in this case, the data of the cards component, and it worked perfectly!, I'll try to learn more about JSON and Javascript (at least the basics) while rebuilding the projects that are left to me (remember that I'm rebuilding all my portfolio of projects to make them more presentable and actualized) to use them there, this way I can be more comfortable with those technologies before even starting to learn them in deep.
+
 ## **Lectures** 📚
 - [Some things you may think about PostCSS... and you might be wrong](https://www.julian.io/articles/postcss.html)
 
