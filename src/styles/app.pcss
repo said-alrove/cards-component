@@ -1,0 +1,50 @@
+@import "normalize.pcss";
+
+:root {
+    --smallscreen: map(breakpoints, smartphone, md);
+    --mediumscreen: map(breakpoints, tablet, sm);
+    --largescreen: map(breakpoints, tablet, lg);
+}
+
+@mixin test($bg-color, $color: blue) {
+    background-color: $bg-color;
+    color: $color;
+}
+
+size: $width, $height {
+    inline-size: $width;
+    block-size: $height;
+}
+
+$in-size: 50px;
+
+html {
+    font-size-responsive: 
+        12px 40px 480px 1024px;
+    size: 600px $in-size;
+    $in-size: 100px;
+
+    @at-root {
+        h1 {
+            font-size: $in-size;
+            @include test(red);
+            @util clearfix;
+        }
+    }
+}
+
+@media (min-width: var(--smallscreen)) {
+    html { size: 300px 150px; }
+
+    h1 { 
+        //font-size: 35px; 
+        margin: 5px * * 10px;
+        -x-position: fixed 5px - - 10px;
+        -x-color: #291ba1 #bba981;
+    }
+
+    div {
+        margin-top: 50px;
+        margin-left: 2;
+    }
+}
