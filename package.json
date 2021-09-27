@@ -1,0 +1,63 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^9.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "doiuse": "^4.4.1",
+    "gulp-avif": "^1.0.1",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-rezzy": "^1.1.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-avif": "^0.1.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-webp": "^6.0.0",
+    "postcss": "^8.3.6",
+    "postcss-atroot": "^0.2.3",
+    "postcss-define-property": "^0.5.0",
+    "postcss-import": "^14.0.2",
+    "postcss-inline-comment": "^3.0.0",
+    "postcss-map": "^0.11.0",
+    "postcss-media-variables": "^2.0.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-nested-vars": "^1.0.0",
+    "postcss-proportional-spacing": "^1.0.2",
+    "postcss-responsive-font": "^1.0.6",
+    "postcss-sassy-mixins": "^2.1.0",
+    "postcss-short-color": "^4.0.0",
+    "postcss-short-position": "^4.0.1",
+    "postcss-short-spacing": "^4.0.0",
+    "postcss-simple-vars": "^6.0.3",
+    "postcss-utilities": "^0.8.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://..."
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "@said_alrove",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://.../issues"
+  },
+  "homepage": "https://...#readme"
+}
