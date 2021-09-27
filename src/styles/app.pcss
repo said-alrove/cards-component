@@ -1,18 +1,15 @@
 @import "normalize.pcss";
+@import "mixins.pcss";
 
+/* Custom Properties */
 :root {
-    /* COLORS */
+    /* Colors */
     --clr-pink-100: #DB008D;
     --clr-gray-100: #F2F2F2;
-    /* VIEWPORT WIDTHS */
+    /* Vw widths */
     --vw-sm: map(breakpoints, smartphone, md);
     --vw-md: map(breakpoints, tablet, sm);
     --vw-lg: map(breakpoints, tablet, lg);
-}
-
-@mixin test($bg-color, $color: blue) {
-    background-color: $bg-color;
-    color: $color;
 }
 
 size: $width, $height {
@@ -20,35 +17,32 @@ size: $width, $height {
     block-size: $height;
 }
 
-$in-size: 50px;
-
+/* General */
 html {
-    font-size-responsive: 
-        12px 40px 480px 1024px;
-    size: 600px $in-size;
-    $in-size: 100px;
-
-    @at-root {
-        h1 {
-            font-size: $in-size;
-            @include test(red);
-            @util clearfix;
-        }
-    }
+    font-size: 62.5%;
+    @include boxModel(border-box);
 }
 
-@media (min-width: var(--vw-sm)) {
-    html { size: 300px 150px; }
+body { font-size: 1.6rem; }
 
-    h1 { 
-        //font-size: 35px; 
-        margin: 5px * * 10px;
-        -x-position: fixed 5px - - 10px;
-        -x-color: #291ba1 #bba981;
-    }
+/* Parent selector seems to doesn't work as it should */
+* { 
+    /* The ::before and ::after pseudo-elements aparently are not compiled to the final version for an unknown reason */
+    @include reset(); 
+    @include boxModel(inherit);
+}
 
-    div {
-        margin-top: 50px;
-        margin-left: 2;
-    }
+img { max-width: 100%; }
+
+/* Titles reset */
+$titleFont: "Libre Baskerville", sans-serif;
+
+.cards-header__title,
+.post-content__title { text-align: center; }
+
+.cards-header__title { font-size: 2.8rem; }
+
+.post-content__title { 
+    font-family: $titleFont;
+    font-size: 2.2rem; 
 }

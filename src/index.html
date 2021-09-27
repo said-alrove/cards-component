@@ -48,9 +48,40 @@
         <meta name="twitter:description" content="#">
     </head>
     <body>
-        <h1>
-            Hello World!
-        </h1>
+        <div class="container">
+            <main class="cards-container">
+                <header class="cards-header">
+                    <h1 class="cards-header__title">Last Posts</h1>
+                </header>
+                <article class="cards-post">
+                    <picture>
+                        <source type="image/webp" srcset="
+                            assets/webp/thumbnail(1)@1x.webp 400w,
+                            assets/webp/thumbnail(1)@2x.webp 800w">
+                        <img 
+                            src="assets/img/Thumbnail(1)@2x.jpg" 
+                            srcset="
+                                assets/img/thumbnail(1)@1x.jpg 400w,
+                                assets/img/thumbnail(1)@2x.jpg 800w"
+                            alt="">
+                    </picture>
+                    <div class="post-content">
+                        <header class="post-content__header">
+                            <h2 class="post-content__title">
+                                Tips for traveling on a budget
+                            </h2>
+                        </header>
+                        <p class="post-content__postedDate"> 
+                            Posted on: <span>July 19, 2018</span> 
+                        </p>
+                        <p class="post-content__postAuthor"> 
+                            By: <span>Travel Blog</span> 
+                        </p>
+                        <a href="#" class="btn-post">Read more</a>
+                    </div>
+                </article>
+            </main>
+        </div>
         <div class="u-hidden">
             <!-- PURGECSS HELPER ELEMENT -->
         </div>
