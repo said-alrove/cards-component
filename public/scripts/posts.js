@@ -1,0 +1,48 @@
+document.addEventListener('DOMContentLoaded', () => {
+    loadPosts()
+});
+
+function loadPosts() {
+    fetch('data.json')
+    .then(reply => {
+        return reply.json()
+    })
+    .then(data => {
+        let html = '';
+        data.cards_container.forEach(post => {
+            // Creates the template
+            html += `
+                <article class="cards-post">
+                    <picture>
+                        <source type="image/webp" srcset="
+                            assets/webp/${post.id.x1}.webp 400w,
+                            assets/webp/${post.id.x2}.webp 800w">
+                        <img 
+                            src="assets/img/${post.id.x2}.jpg" 
+                            srcset="
+                                assets/img/${post.id.x1}.jpg 400w,
+                                assets/img/${post.id.x2}.jpg 800w"
+                            class="cards-post__thumbnail"
+                            alt="">
+                    </picture>
+                    <div class="post-content">
+                        <header class="post-content__header">
+                            <h2 class="post-content__title">
+                                ${post.title}
+                            </h2>
+                        </header>
+                        <p class="post-content__postedDate"> 
+                            Posted on: <span>${post.postedDate}</span> 
+                        </p>
+                        <p class="post-content__postAuthor"> 
+                            By: <span>${post.postAuthor}</span> 
+                        </p>
+                        <a href="#" class="btn-post">Read more</a>
+                    </div>
+                </article>
+            `;
+        });
+        // Injects the HTML
+        document.querySelector('#cards-container').innerHTML = html;
+    });
+}
