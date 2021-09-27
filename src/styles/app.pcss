@@ -1,9 +1,13 @@
 @import "normalize.pcss";
 
 :root {
-    --smallscreen: map(breakpoints, smartphone, md);
-    --mediumscreen: map(breakpoints, tablet, sm);
-    --largescreen: map(breakpoints, tablet, lg);
+    /* COLORS */
+    --clr-pink-100: #DB008D;
+    --clr-gray-100: #F2F2F2;
+    /* VIEWPORT WIDTHS */
+    --vw-sm: map(breakpoints, smartphone, md);
+    --vw-md: map(breakpoints, tablet, sm);
+    --vw-lg: map(breakpoints, tablet, lg);
 }
 
 @mixin test($bg-color, $color: blue) {
@@ -33,7 +37,7 @@ html {
     }
 }
 
-@media (min-width: var(--smallscreen)) {
+@media (min-width: var(--vw-sm)) {
     html { size: 300px 150px; }
 
     h1 { 

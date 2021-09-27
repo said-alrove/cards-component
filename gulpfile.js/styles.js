@@ -33,7 +33,7 @@ function css() {
   }
   // DOIUSE CONFIG 
   const doiuseConfig = {
-    browsers: ['> 1%'],
+    browsers: ["ie >= 9, > 1%, last 2 versions"],
     ignoreFiles: '**/normalize.pcss',
     onFeatureUsage: function (usageInfo) {
       console.log(usageInfo.message)
