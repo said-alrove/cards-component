@@ -14,14 +14,18 @@ function loadPosts() {
             html += `
                 <article class="cards-post">
                     <picture>
-                        <source type="image/webp" srcset="
-                            assets/webp/${post.id.x1}.webp 400w,
-                            assets/webp/${post.id.x2}.webp 800w">
+                        <source 
+                            type="image/webp" 
+                            sizes="(min-width: 768px) 375px, 100vw"
+                            srcset="
+                                assets/webp/${post.id.x1}.webp 400w,
+                                assets/webp/${post.id.x2}.webp 800w">
                         <img 
                             src="assets/img/${post.id.x2}.jpg" 
                             srcset="
                                 assets/img/${post.id.x1}.jpg 400w,
                                 assets/img/${post.id.x2}.jpg 800w"
+                            sizes="(min-width: 768px) 375px, 100vw"
                             class="cards-post__thumbnail"
                             alt="">
                     </picture>
