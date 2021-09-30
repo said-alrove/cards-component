@@ -1,6 +1,8 @@
 # [Cards-component]()
 This is the seventh project from Juan Pablo's course of [CSS Grid and Flexbox](https://www.udemy.com/course/css-grid-y-flexbox-la-guia-definitiva-crea-10-proyectos/).
 
+> **Note:** this is supposed to be the complement of the [Travel Blog](https://github.com/said-alrove/travel-blog) project (this should've been developed first, but due to I was rebuilding all the projects of this course without an apparent order I finished rebuilding the big one first, and just after, the mini-project that was supposed to be the base of it).
+
 > **Disclaimer:** I'm starting to learn how to use **Git/Github** correctly, therefore there'll be plenty of pull requests, commits and other stuff as tests in this repository, however, *this won't represent my way of working forever*, I'll learn more things along the way as always :D!.
 
 ## Table of contents
@@ -39,8 +41,16 @@ This is the seventh project from Juan Pablo's course of [CSS Grid and Flexbox](h
     
 * To make things more interesting, I tried to use Javascript and JSON as I did in the [**freelancer-home**](https://github.com/said-alrove/freelancer-home) project to load data, in this case, the data of the cards component, and it worked perfectly!, I'll try to learn more about JSON and Javascript (at least the basics) while rebuilding the projects that are left to me (remember that I'm rebuilding all my portfolio of projects to make them more presentable and actualized) to use them there, this way I can be more comfortable with those technologies before even starting to learn them in deep.
 
+* This time I wanted to put more into practice the use of responsive properties for images in HTML such as **srcset** and **sizes**, therefore I read an [article](https://medium.com/@MRWwebDesign/responsive-images-the-sizes-attribute-and-unexpected-image-sizes-882a2eadb6db) about the topic and I rewatched the series of videos about [The images on the Web](https://youtube.com/playlist?list=PLssXrSIRXL82LDiv1wLFhknwhlG_LH0VI) of [**Kevin Powell**](https://www.youtube.com/kepowob/featured) (I had already watched this a long time ago, but there were some things I didn't remember as well as I'd like, therefore I decided to refresh my memory).
+
+* Because I was also going to focus this mini-project on the images, I decided to put attention on the **alt** attribute as well by reading more information about its use (there were certain projects where I used the "This image shows" sentence which seems to be wrong, therefore I wanted to get more information about how to optimize the alternative text content).
+
+> **Note:** While looking for information about the images on the web and the alternative text attribute I saw how a couple of authors mentioned the importance of accessibility for videos and audios which's also very important, thus I decided to put it into practice for those specific cases in a future project (which will help me also to learn how to set up the **video** and **audio** tags correctly in the HTML file).
+
 ## **Lectures** 📚
 - [Some things you may think about PostCSS... and you might be wrong](https://www.julian.io/articles/postcss.html)
+- [Responsive Images, The sizes Attribute, and Unexpected Image Sizes](https://medium.com/@MRWwebDesign/responsive-images-the-sizes-attribute-and-unexpected-image-sizes-882a2eadb6db)
+- [It’s ALT Good: Alternative Text & Accessibility](https://mrwweb.com/alternative-text-accessibility/)
 
 ## **Preview** 👩‍💻
 ![](readme/screenshot.png)
