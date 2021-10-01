@@ -47,6 +47,12 @@ This is the seventh project from Juan Pablo's course of [CSS Grid and Flexbox](h
 
 > **Note:** While looking for information about the images on the web and the alternative text attribute I saw how a couple of authors mentioned the importance of accessibility for videos and audios which's also very important, thus I decided to put it into practice for those specific cases in a future project (which will help me also to learn how to set up the **video** and **audio** tags correctly in the HTML file).
 
+* Also, I learned the [@util PostCSS library](https://ismamz.github.io/postcss-utilities/docs) (it's a small utilities library), first, because I had to (is one of the plugins I set for PostCSS, therefore would have been quite weird to don't use it) and second, because I wanted to get used to this **utlities** model using the @util rule (which is also used for injecting [TailwindCSS](https://tailwindcss.com/docs/installation) utilities into our stylesheets, obviously the main point of TailwindCSS is to avoid spending too much time writing CSS and instead, just write HTML "inline-styles", but you get it, I wanted to be more in line with it for when I learn it). Here are some screenshots about all the utilities available with @util (this is how I practiced with it before getting full into the project):
+
+![](readme/@util.png)
+
+> **Note:** I made notes about some issues that I ran into when testing these utilities, but I removed them when taking the screenshot basically because **Snapshot** seems to didn't understand break-lines which is bad when having large comments.
+
 ## **Lectures** 📚
 - [Some things you may think about PostCSS... and you might be wrong](https://www.julian.io/articles/postcss.html)
 - [Responsive Images, The sizes Attribute, and Unexpected Image Sizes](https://medium.com/@MRWwebDesign/responsive-images-the-sizes-attribute-and-unexpected-image-sizes-882a2eadb6db)
