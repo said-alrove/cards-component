@@ -18,13 +18,15 @@ function loadPosts() {
                             type="image/webp" 
                             sizes="(min-width: 768px) 375px, 100vw"
                             srcset="
-                                assets/webp/${post.id.x1}.webp 400w,
-                                assets/webp/${post.id.x2}.webp 800w">
+                                assets/webp/${post.id.x1}.webp 200w,
+                                assets/webp/${post.id.x2}.webp 400w,
+                                assets/webp/${post.id.x3}.webp 800w">
                         <img 
-                            src="assets/img/${post.id.x2}.jpg" 
+                            src="assets/img/${post.id.x1}.jpg" 
                             srcset="
-                                assets/img/${post.id.x1}.jpg 400w,
-                                assets/img/${post.id.x2}.jpg 800w"
+                                assets/img/${post.id.x1}.jpg 200w,
+                                assets/img/${post.id.x2}.jpg 400w,
+                                assets/img/${post.id.x3}.jpg 800w"
                             sizes="(min-width: 768px) 375px, 100vw"
                             class="cards-post__thumbnail"
                             alt="">
