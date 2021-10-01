@@ -5,14 +5,19 @@ const
 
 let rezzyConfig = [
   {
+    width: 200,
+    height: 112,
+    suffix: "@1x"
+  },
+  {
     width: 400,
     height: 225,
-    suffix: "@1x"
+    suffix: "@2x"
   },
   {
     width: 800,
     height: 450,
-    suffix: "@2x"
+    suffix: "@3x"
   }
 ]
 

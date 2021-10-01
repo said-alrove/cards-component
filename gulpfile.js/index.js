@@ -48,3 +48,8 @@ exports.build =
   series(html, css, images, 
   parallel(scripts, json));
 exports.default = dev;
+
+exports.css = css;
+exports.html = html;
+exports.images = images;
+exports.js = series(scripts, json);

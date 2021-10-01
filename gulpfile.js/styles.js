@@ -40,10 +40,16 @@ function css() {
       console.log(usageInfo.message)
     }
   }
+  // UTILITIES CONFIG
+  const utilConfig = {
+    centerMethod: "flexbox",
+    ie8: true,
+    textHideMethod: "font"
+  }
   // MAPS CONFIG
   const mapsConfig = {
     basePath: "./src/styles",
-    maps: ["breakpoints.yml"]
+    maps: ["breakpoints.json"]
   }
   // SHORT CONFIG
   const shortConfig = { 
@@ -57,7 +63,7 @@ function css() {
     simpleVars(),
     atroot(),
     autoprefixer(autoprefixerConfig),
-    utilities(),
+    utilities(utilConfig),
     shortcuts(),
     shortSpacing(),
     shortPositioning(shortConfig),
