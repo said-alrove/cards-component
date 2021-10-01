@@ -30,8 +30,10 @@ This is the seventh project from Juan Pablo's course of [CSS Grid and Flexbox](h
     - [postcss-responsive-font](https://www.npmjs.com/package/postcss-responsive-font) is meant to be a plugin that helps you to create responsive fonts (as you might have guessed), it allows you to use a new property called **font-size-responsive** which accepts four values, the minimum and the maximum font-size and the minimum and maximum viewport-width.
     - [postcss-map](https://www.npmjs.com/package/postcss) is meant to be a plugin that allows you to create maps to save values (such as in SASS), but in a more modular way (by creating files with the **.yml** extension) and then using them in your stylesheets through the **map** function (again, such as in SASS).
     - [postcss-sassy-mixins](https://www.npmjs.com/package/postcss-sassy-mixins) is meant to be a plugins that allows you to use sass-like mixins in your stylesheets.
+    - [postcss-nested-selectors](https://www.npmjs.com/package/postcss-nested-selectors) is meant to be a plugin that allows you to use the parent selector such as in SASS.
     - [postcss-nested] is meant to be a plugins that allows you to use the power of nesting within your stylesheets such as in SASS.
     - [postcss-nested-vars](https://www.npmjs.com/package/postcss-nested-vars) is meant to be a plugin that allows you to create **global and local scopes** for your variables such as in SASS.
+    - [postcss-inline-comments](https://www.npmjs.com/package/postcss-inline-comments) is meant to be a plugin that allows you to use inline comments such as in SASS.
     - [postcss-proportional-spacing](https://www.npmjs.com/package/postcss-proportional-spacing) is meant ot be a plugin that allows you to create vertical and horizontal proportional spacing using ratios.
 
 * Something important to mention is that for this mini-project I wanted to use PostCSS plugins only, to test which ones are worth it to use in future projects in combination with **SASS** to make a stronger kind of preprocessor.
