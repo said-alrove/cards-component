@@ -22,7 +22,6 @@ function dev() {
     reload = browserSync.reload;
   // CONFIG
   const gulpConfig = {
-    delay: 1000, 
     ignoreInitial: false
   }
   // LIVE SERVER
