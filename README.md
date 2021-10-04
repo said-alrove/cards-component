@@ -33,6 +33,7 @@ This is the seventh project from Juan Pablo's course of [CSS Grid and Flexbox](h
     - [postcss-nested-selectors](https://www.npmjs.com/package/postcss-nested-selectors) is meant to be a plugin that allows you to use the parent selector such as in SASS.
     - [postcss-nested] is meant to be a plugins that allows you to use the power of nesting within your stylesheets such as in SASS.
     - [postcss-nested-vars](https://www.npmjs.com/package/postcss-nested-vars) is meant to be a plugin that allows you to create **global and local scopes** for your variables such as in SASS.
+    - [postcss-nested-props](https://www.npmjs.com/package/postcss-nested-props) is meant to be a plugin that allows you to nest declaration properties such as in SASS.
     - [postcss-inline-comments](https://www.npmjs.com/package/postcss-inline-comments) is meant to be a plugin that allows you to use inline comments such as in SASS.
     - [postcss-proportional-spacing](https://www.npmjs.com/package/postcss-proportional-spacing) is meant ot be a plugin that allows you to create vertical and horizontal proportional spacing using ratios.
 

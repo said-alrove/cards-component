@@ -25,7 +25,10 @@ html {
     @include boxModel(border-box);
 }
 
-body { font-size: 1.6rem; }
+body { 
+    font-size: 1.6rem; 
+    background-color: var(--clr-gray-100);
+}
 
 /* Parent selector seems to doesn't work as it should */
 * { 
@@ -45,6 +48,30 @@ $titleFont: "Libre Baskerville", sans-serif;
 .cards-header__title { font-size: 2.8rem; }
 
 .post-content__title { 
-    font-family: $titleFont;
-    font-size: 2.2rem; 
+    font: {
+        family: $titleFont;
+        size: 2.4rem
+    } 
+}
+
+/* Containers */
+.container {
+    max-inline-size: 110rem;
+    @util margin(2em auto 2em auto);
+}
+
+/* Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.cards-post {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: var(--vw-sm)) {
+    .cards-post { flex: 0 1 calc((100% / 2) - 7.5px); }
 }

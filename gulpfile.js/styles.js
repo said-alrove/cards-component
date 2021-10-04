@@ -24,6 +24,7 @@ function css() {
     ancestorsSelector = require('postcss-nested-ancestors'),
     nesting = require('postcss-nested'),
     nestedVars = require('postcss-nested-vars'),
+    nestedProps = require('postcss-nested-props'),
     inlineComments = require('postcss-inline-comment'),
     proportionalSpacing = require('postcss-proportional-spacing'),
     cssnano = require('cssnano');
@@ -74,6 +75,7 @@ function css() {
     ancestorsSelector(),
     nesting(),
     nestedVars(),
+    nestedProps(),
     inlineComments(),
     proportionalSpacing(),
     cssnano()
@@ -90,6 +92,7 @@ function css() {
       content: ['./src/*.html']
     }))
     .pipe(concat('app.css'))
+    .pipe(plumber.stop())
     .pipe(dest('./public/styles', { sourcemaps: '.' }))
 }
 

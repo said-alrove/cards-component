@@ -39,7 +39,7 @@ function dev() {
 }
 
 const 
- { series, parallel } = require('gulp'),
+ { watch, series, parallel } = require('gulp'),
  { html } = require('./html.js'),
  { css } = require('./styles.js'),
  { images } = require('./images.js');
@@ -49,6 +49,7 @@ exports.build =
   parallel(scripts, json));
 exports.default = dev;
 
+// INDIVIDUAL TASKS
 exports.css = css;
 exports.html = html;
 exports.images = images;
