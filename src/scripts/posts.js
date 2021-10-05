@@ -16,7 +16,7 @@ function loadPosts() {
                     <picture>
                         <source 
                             type="image/webp" 
-                            sizes="(min-width: 768px) 375px, 100vw"
+                            sizes="(min-width: 768px) 350px, 100vw"
                             srcset="
                                 assets/webp/${post.id.x1}.webp 200w,
                                 assets/webp/${post.id.x2}.webp 400w,
@@ -27,7 +27,7 @@ function loadPosts() {
                                 assets/img/${post.id.x1}.jpg 200w,
                                 assets/img/${post.id.x2}.jpg 400w,
                                 assets/img/${post.id.x3}.jpg 800w"
-                            sizes="(min-width: 768px) 375px, 100vw"
+                            sizes="(min-width: 768px) 350px, 100vw"
                             class="cards-post__thumbnail"
                             alt="">
                     </picture>
@@ -38,10 +38,10 @@ function loadPosts() {
                             </h2>
                         </header>
                         <p class="post-content__postedDate"> 
-                            Posted on: <span>${post.postedDate}</span> 
+                            Posted on: <span class="post-content__data">${post.postedDate}</span> 
                         </p>
                         <p class="post-content__postAuthor"> 
-                            By: <span>${post.postAuthor}</span> 
+                            By: <span class="post-content__data">${post.postAuthor}</span> 
                         </p>
                         <a href="#" class="btn-post">Read more</a>
                     </div>
