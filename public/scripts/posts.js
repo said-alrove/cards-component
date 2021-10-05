@@ -18,18 +18,18 @@ function loadPosts() {
                             type="image/webp" 
                             sizes="(min-width: 768px) 350px, 100vw"
                             srcset="
-                                assets/webp/${post.id.x1}.webp 200w,
-                                assets/webp/${post.id.x2}.webp 400w,
-                                assets/webp/${post.id.x3}.webp 800w">
+                                https://said-alrove.github.io/cards-component/public/assets/webp/${post.id.x1}.webp 200w,
+                                https://said-alrove.github.io/cards-component/public/assets/webp/${post.id.x2}.webp 400w,
+                                https://said-alrove.github.io/cards-component/public/assets/webp/${post.id.x3}.webp 800w">
                         <img 
-                            src="assets/img/${post.id.x1}.jpg" 
+                            src="https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x1}.jpg" 
                             srcset="
-                                assets/img/${post.id.x1}.jpg 200w,
-                                assets/img/${post.id.x2}.jpg 400w,
-                                assets/img/${post.id.x3}.jpg 800w"
+                                https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x1}.jpg 200w,
+                                https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x2}.jpg 400w,
+                                https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x3}.jpg 800w"
                             sizes="(min-width: 768px) 350px, 100vw"
                             class="cards-post__thumbnail"
-                            alt="">
+                            alt="${post.alt}">
                     </picture>
                     <div class="post-content">
                         <header class="post-content__header">
