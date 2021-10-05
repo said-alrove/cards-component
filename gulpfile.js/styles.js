@@ -10,6 +10,7 @@ function css() {
   const 
     doiuse = require('doiuse'),
     importRule = require('postcss-import'),
+    customProps = require('postcss-custom-properties'),
     simpleVars = require('postcss-simple-vars'),
     atroot = require('postcss-atroot'),
     autoprefixer = require('autoprefixer'),
@@ -41,6 +42,11 @@ function css() {
       console.log(usageInfo.message)
     }
   }
+  const customPropsConfig = {
+    preserve: false,
+    importFrom: "./src/styles/variables.json",
+    exportTo: "./src/styles/*.pcss"
+  }
   // UTILITIES CONFIG
   const utilConfig = {
     centerMethod: "flexbox",
@@ -62,6 +68,7 @@ function css() {
     doiuse(doiuseConfig),
     importRule(),
     simpleVars(),
+    customProps(customPropsConfig),
     atroot(),
     autoprefixer(autoprefixerConfig),
     utilities(utilConfig),
