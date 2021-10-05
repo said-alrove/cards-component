@@ -1,0 +1,16 @@
+{
+  "smartphone": {
+    "sm": "320px",
+    "md": "480px",
+    "lg": "552px"
+  },
+  "tablet": {
+    "sm": "768px",
+    "md": "912px",
+    "lg": "1024px"
+  },
+  "desktop": {
+    "sm": "1212px",
+    "md": "1516px"
+  }
+}

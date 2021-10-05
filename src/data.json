@@ -1,0 +1,70 @@
+{
+    "cards_container": [
+        {
+            "id": {
+                "x1": "thumbnail(1)@1x",
+                "x2": "thumbnail(1)@2x",
+                "x3": "thumbnail(1)@3x"
+            },
+            "alt": "Basic travel equipment on the floor",
+            "title": "Tips for traveling on a budget",
+            "postedDate": "July 19th, 2018",
+            "postAuthor": "Travel Blog"
+        },
+        {
+            "id": {
+                "x1": "thumbnail(2)@1x",
+                "x2": "thumbnail(2)@2x",
+                "x3": "thumbnail(2)@3x"
+            },
+            "alt": "Colorful suitcases",
+            "title": "Everything you need for your trip",
+            "postedDate": "July 19th, 2018",
+            "postAuthor": "Travel Blog"
+        },
+        {
+            "id": {
+                "x1": "thumbnail(3)@1x",
+                "x2": "thumbnail(3)@2x",
+                "x3": "thumbnail(3)@3x"
+            },
+            "alt": "A person photographing the sunrise",
+            "title": "The equipment you need to take the best pictures",
+            "postedDate": "July 19th, 2018",
+            "postAuthor": "Travel Blog"
+        },
+        {
+            "id": {
+                "x1": "thumbnail(4)@1x",
+                "x2": "thumbnail(4)@2x",
+                "x3": "thumbnail(4)@3x"
+            },
+            "alt": "A passport and some glasses",
+            "title": "Checklist for your next trip",
+            "postedDate": "July 19th, 2018",
+            "postAuthor": "Travel Blog"
+        },
+        {
+            "id": {
+                "x1": "thumbnail(5)@1x",
+                "x2": "thumbnail(5)@2x",
+                "x3": "thumbnail(5)@3x"
+            },
+            "alt": "A fall-forest landscape",
+            "title": "The best places to visit this fall",
+            "postedDate": "July 19th, 2018",
+            "postAuthor": "Travel Blog"
+        },
+        {
+            "id": {
+                "x1": "thumbnail(6)@1x",
+                "x2": "thumbnail(6)@2x",
+                "x3": "thumbnail(6)@3x"
+            },
+            "alt": "A landscape with plenty of mountains",
+            "title": "The best places to visit with mountains",
+            "postedDate": "July 19th, 2018",
+            "postAuthor": "Travel Blog"
+        }
+    ]
+}

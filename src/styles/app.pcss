@@ -1,0 +1,107 @@
+@import "normalize.pcss";
+@import "mixins.pcss";
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
+
+/* The custom properties are imported from the variables.json file thanks to the "postcss-custom-props" plugin */
+
+size: $width, $height {
+    inline-size: $width;
+    block-size: $height;
+}
+
+/* General */
+html {
+    font-size: 62.5%;
+    @include boxModel(border-box);
+}
+
+body { 
+    font-size: 1.6rem; 
+    background-color: var(--clr-gray-100);
+}
+
+/* Parent selector seems to doesn't work as it should */
+* { 
+    /* The ::before and ::after pseudo-elements aparently are not compiled to the final version for an unknown reason */
+    @include reset(); 
+    @include boxModel(inherit);
+}
+
+img { max-width: 100%; }
+
+/* Utilities */
+.u-hidden { display: none !important; }
+
+/* Titles reset */
+$titleFont: "Libre Baskerville", sans-serif;
+$suffix: title;
+
+.cards-header__$(suffix),
+.post-content__$(suffix) { text-align: center; }
+
+.cards-header__$(suffix) { font-size: 2.8rem; }
+
+.post-content__$(suffix) { 
+    font: {
+        family: $titleFont;
+        size: 1.4rem
+    } 
+    line-height: 1.4;
+}
+
+/* Containers */
+.container {
+    max-inline-size: 110rem;
+    @util margin(2em auto);
+}
+
+/* Cards */
+.cards {
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+
+    &-post {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: map(smartphone, md)) {
+            flex: 0 1 calc((100% / 2) - .75em);
+        }
+        
+        @media (min-width: map(tablet, sm)) {
+            flex: 0 1 calc((100% / 3) - 1em); 
+        }
+
+        @at-root {
+            .post-content {
+                @util padding(1em);
+                text: {
+                    align: center;
+                    transform: uppercase;
+                }
+                background-color: var(--clr-white);
+
+                &__data { color: var(--clr-pink-100); }
+            }
+        }
+    }
+
+    @at-root {
+        .btn-post {
+            display: inline-block;
+            @util margin(1em);
+            @util padding(.6em 2em);
+            text-decoration: none;
+            -x-color:  
+                var(--clr-white)
+                var(--clr-blue-100);
+            transition: all 250ms ease-in-out;
+
+            &:hover { background-color: var(--clr-blue-200); }
+        }
+    }
+}
