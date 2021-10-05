@@ -1,0 +1,9 @@
+{
+  "custom-properties": {
+    "--clr-pink-100": "#DB008D",
+    "--clr-blue-100": "#008FD1",
+    "--clr-gray-100": "#F2F2F2",
+    "--clr-white": "#FFF",
+    "--clr-black": "#000"
+  }
+}
