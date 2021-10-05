@@ -68,6 +68,12 @@ function convertWebp() {
     .pipe(dest("./public/assets/webp"))
 }
 
+// This is just to send the Open-Graph image from the src directory to the public diretory without being renamed with the suffix "@2x" or "@1x"
+function openGraph() {
+  return src("./src/assets/*.{png, jpg}")
+    .pipe(dest("./public/assets"))
+}
+
 const { parallel } = require('gulp');
 // This is mandatory
-exports.images = parallel(minify, convertWebp, convertIcon);
+exports.images = parallel(minify, convertWebp, convertIcon, openGraph);
