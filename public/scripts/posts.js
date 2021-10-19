@@ -10,24 +10,26 @@ function loadPosts() {
     .then(data => {
         let html = '';
         data.cards_container.forEach(post => {
+            const sizes = "(min-width: 768px) 350px, 100vw";
+            const path = "https://said-alrove.github.io/cards-component/public/assets";
             // Creates the template
             html += `
                 <article class="cards-post">
                     <picture>
                         <source 
                             type="image/webp" 
-                            sizes="(min-width: 768px) 350px, 100vw"
+                            sizes="${sizes}"
                             srcset="
-                                https://said-alrove.github.io/cards-component/public/assets/webp/${post.id.x1}.webp 200w,
-                                https://said-alrove.github.io/cards-component/public/assets/webp/${post.id.x2}.webp 400w,
-                                https://said-alrove.github.io/cards-component/public/assets/webp/${post.id.x3}.webp 800w">
+                                ${path}/webp/${post.id.x1}.webp 200w,
+                                ${path}/webp/${post.id.x2}.webp 400w,
+                                ${path}/webp/${post.id.x3}.webp 800w">
                         <img 
-                            src="https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x1}.jpg" 
+                            src="${path}/img/${post.id.x1}.jpg" 
                             srcset="
-                                https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x1}.jpg 200w,
-                                https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x2}.jpg 400w,
-                                https://said-alrove.github.io/cards-component/public/assets/img/${post.id.x3}.jpg 800w"
-                            sizes="(min-width: 768px) 350px, 100vw"
+                                ${path}/img/${post.id.x1}.jpg 200w,
+                                ${path}/img/${post.id.x2}.jpg 400w,
+                                ${path}/img/${post.id.x3}.jpg 800w"
+                            sizes="${sizes}"
                             class="cards-post__thumbnail"
                             alt="${post.alt}">
                     </picture>
