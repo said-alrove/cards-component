@@ -1,25 +1,25 @@
 const { src, dest, lastRun } = require('gulp');
 const 
-  imagesQuality = 75,
-  imageResize = require('gulp-rezzy');
+  imagesQuality = 75;
+  // imageResize = require('gulp-rezzy');
 
-let rezzyConfig = [
-  {
-    width: 200,
-    height: 112,
-    suffix: "@1x"
-  },
-  {
-    width: 400,
-    height: 225,
-    suffix: "@2x"
-  },
-  {
-    width: 800,
-    height: 450,
-    suffix: "@3x"
-  }
-]
+// let rezzyConfig = [
+//   {
+//     width: 200,
+//     height: 112,
+//     suffix: "@1x"
+//   },
+//   {
+//     width: 400,
+//     height: 225,
+//     suffix: "@2x"
+//   },
+//   {
+//     width: 800,
+//     height: 450,
+//     suffix: "@3x"
+//   }
+// ]
 
 // This is just to send the icons from the src directory to the public diretory without being renamed with the suffix "@3x", "@2x" or "@1x"
 function convertIcon() {
@@ -46,7 +46,7 @@ function minify() {
         imageminMozjpeg(jpegConfig),
         imageminOptipng(pngConfig)
     ]))
-    .pipe(imageResize(rezzyConfig))
+    // .pipe(imageResize(rezzyConfig))
     .pipe(dest("./public/assets/img"))
 }
 
@@ -64,7 +64,7 @@ function convertWebp() {
     .pipe(webp([
       imageminWebp(webpConfig)
     ]))
-    .pipe(imageResize(rezzyConfig))
+    // .pipe(imageResize(rezzyConfig))
     .pipe(dest("./public/assets/webp"))
 }
 
@@ -76,4 +76,6 @@ function openGraph() {
 
 const { parallel } = require('gulp');
 // This is mandatory
-exports.images = parallel(minify, convertWebp, convertIcon, openGraph);
+
+// ConvertWebp and Minify tasks are not longer working due to problems related to the gulp-rezzy dependency, therefore they'll be skiped from the exported task
+exports.images = parallel(convertIcon, openGraph);

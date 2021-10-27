@@ -31,7 +31,7 @@ function loadPosts() {
                                 ${path}/img/${post.id.x3}.jpg 800w"
                             sizes="${sizes}"
                             class="cards-post__thumbnail"
-                            alt="${post.alt}">
+                            alt="">
                     </picture>
                     <div class="post-content">
                         <header class="post-content__header">
