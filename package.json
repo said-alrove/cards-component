@@ -6,13 +6,13 @@
   "dependencies": {
     "autoprefixer": "^10.3.4",
     "cssnano": "^5.0.8",
-    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-postcss": "^9.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "doiuse": "^4.4.1",
+    "gulp": "^4.0.2",
     "gulp-avif": "^1.0.1",
     "gulp-cache-bust": "^1.4.1",
     "gulp-concat": "^2.6.1",
